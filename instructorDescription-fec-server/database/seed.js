@@ -4,6 +4,7 @@ const Instructors = require('./dbInstructor.js');
 
 for (let i = 1; i <= 100; i++) {
   let instructorList = {};
+  instructorList.courseId = i;
   instructorList.imageUrl = faker.image.avatar();
   instructorList.name = faker.name.findName();
   instructorList.headline = faker.lorem.sentence();

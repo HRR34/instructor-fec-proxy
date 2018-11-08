@@ -5,9 +5,19 @@ class Instructor extends React.Component {
   constructor(props, context) {
     super(props, context);
     this.state = {
-      showText: false
+      showText: false,
+      isButtonVisible: true
     }
+    this.hideButton = this.hideButton.bind(this);
   }
+
+  hideButton() {
+   this.setState({
+      showText: !this.state.showText,
+      isButtonVisible: false
+    })
+  }
+
   render() {
     return (
       <div id="instructor">
@@ -46,9 +56,8 @@ class Instructor extends React.Component {
               </div>
             </Collapse>
           }
-          <a className="showMore" onClick={() => {
-            this.setState({ showText: !this.state.showText })}
-          }> + See more</a>
+          <a className="showMore" onClick={this.hideButton}>
+            {!this.state.isButtonVisible ? '' : '+ See More'}</a>
           </div>
         </div>
       </div>

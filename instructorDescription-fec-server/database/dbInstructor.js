@@ -3,6 +3,7 @@ const db = require('./index.js');
 mongoose.Promise = global.Promise;
 
 const instructorSchema = new mongoose.Schema({
+  courseId: Number,
   imageUrl: String,
   name: String,
   headline: String,

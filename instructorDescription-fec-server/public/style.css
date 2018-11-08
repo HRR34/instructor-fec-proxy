@@ -1,0 +1,83 @@
+#instructor {
+  max-width: 600px
+  max-height:350px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row;
+  background: none;
+  border: none;
+  padding: 20px 0 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.avatar {
+  border-radius: 50%;
+  max-height: 96px;
+  max-width: 96px;
+}
+
+.Icon {
+  max-height: 16px;
+  max-width: 16px;
+  padding-right: 4px;
+  padding-top: 5px;
+}
+
+.reviews, .students, .courses, .rating {
+  padding: 5px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  padding-bottom: 5px;
+
+}
+
+.number {
+  font-weight: bold;
+}
+
+.avatarBox {
+    width: 250px;
+    float:left; /* add this */
+    padding-top: 10px;
+}
+.descriptionBox {
+    width: 350px;
+    overflow: hidden;
+    padding-top: 10px;
+}
+.showMore {
+  color: #007791;
+  font-size: 15px;
+}
+
+.showMore:hover {
+  color: #29303b;
+}
+
+.name {
+  color: #007791;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+.name:hover {
+  color: #29303b;
+}
+
+.header {
+    display: block;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0;
+}
+
+.body {
+  font-size: 15px;
+}
+
+.headline {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
