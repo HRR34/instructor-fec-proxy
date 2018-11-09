@@ -2,11 +2,14 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const path = require('path');
 const { Course } = require('../db/Models.js');
+const cors = require('cors');
+
 
 const app = express();
 
 const port = process.env.PORT || 7777;
 
+app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, '../public')));

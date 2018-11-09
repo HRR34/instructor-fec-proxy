@@ -33,7 +33,7 @@ class Entries extends React.Component {
 
     return (
         <div className = "entry-course-items">
-          <div className = "entry-image-div"> <img className = "entry-image" src = "img/playbutton.png"/>
+          <div className = "entry-image-div"> <img className = "entry-image" src = "https://s3.us-east-2.amazonaws.com/fec-team7-images/playbutton.png"/>
           </div>
             <div className = "entry-name"> {this.state.entry.name} </div>
 
@@ -51,4 +51,4 @@ class Entries extends React.Component {
 
 }
 
-export default Entries
+module.exports = Entries;

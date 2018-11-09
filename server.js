@@ -1,14 +1,33 @@
 const express = require('express');
 const path = require('path');
 const app = express();
-const port = process.env.PORT || 4000;
+const proxy = require('http-proxy-middleware');
 
+const port = 3000;
 
-app.use(express.static(path.join(__dirname, 'public')));
+const publicDir = path.join(__dirname, 'public');
 
-app.get('/:courseId', (req, res) => {
-  res.sendFile(path.join(`${__dirname}/./public/index.html`))
-});
+app.enable('trust proxy');
+
+const options = {
+  target: 'http://localhost:3000',
+  changeOrigin: true,
+  router: {
+    '/instructors': 'http://localhost:3332',
+    '/reviews': 'http://localhost:8000',
+    '/repos': 'http://localhost:3333',
+    '/': 'http://localhost:7777'
+  }
+}
+
+const apiProxy = proxy(options);
+
+app.use('/instructors', apiProxy)
+app.use('/reviews', apiProxy)
+app.use('/repos', apiProxy)
+app.use('/', apiProxy)
+
+app.use(express.static(publicDir));
 
 
 app.listen(port, () => {
