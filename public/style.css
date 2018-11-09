@@ -1,14 +1,23 @@
-#Info {
-  display: block;
+#CourseContent {
+  margin-left: 50px;
+  display: inline-flex;
+  width: 100%;
+  margin-top: 350px;
 }
 
-#CountDown {
-  margin-left: 5px;
-  display: inline-block;
+#Instructor {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 50px;
+  display: inline-flex;
 }
 
-#Related {
-  margin: 10%;
-  display: block;
+#Reviews {
+  margin-left: 50px;
+  display: inline-flex;
+}
+
+#TopSection {
+  display: inline-flex;
 }
 

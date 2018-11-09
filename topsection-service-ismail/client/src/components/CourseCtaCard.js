@@ -112,7 +112,7 @@ const styles = {
   cardBodyStyle: {
     paddingTop: '4%',
     paddingLeft: '9%',
-    paddingRight: '5%'
+    paddingRight: '5%',
   },
   priceContainerStyle: {
     display: 'flex',

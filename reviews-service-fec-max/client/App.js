@@ -116,7 +116,7 @@ const seeMoreReviewsBtnHolder = {
 
 const topContainer = {
   borderBottom: '1px solid grey',
-  maxWidth:'100%',
+  maxWidth:'60%',
 }
 
 const reviewDescr = {

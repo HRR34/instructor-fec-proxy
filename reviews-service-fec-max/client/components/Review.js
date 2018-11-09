@@ -9,9 +9,8 @@ import moment from 'moment';
     borderTop: '1px solid grey',
     paddingTop: '20px',
     paddingBottom: '20px',
-    maxWidth:'100%',
-    height: 'auto',
-    flexWrap:'wrap',
+    maxWidth:'60%',
+    height: '300px'
   }
 
   const avatar = {
@@ -22,24 +21,22 @@ import moment from 'moment';
 
   const leftColumn = {
     display: 'inline-block',
-    width: '300px',
+    width: '40%',
     height:'100px',
     fontSize: '15px',
   }
   const emptySpace = {
     display: 'inline-block',
-    width: '300px',
-    height:'100px',
+
   }
 
   const rightColumn = {
     display: 'inline-block',
-    maxWidth: '70%',
+    maxWidth: '60%',
     paddingLeft: '1%',
-    height: 'auto', 
+    height: 'auto',
     lineHeight:'1.43',
     fontSize: '15px',
-    verticalAllign:'top',
   }
 
   const avatarContainer = {
@@ -58,7 +55,7 @@ import moment from 'moment';
     maxHeight: '100%',
     maxWidth: '100%',
     float: 'left',
-    verticalAlign: 'middle', 
+    verticalAlign: 'middle',
     lineHeight: '40px',
   }
 
@@ -68,7 +65,7 @@ import moment from 'moment';
   }
 
   const author = {
-    display:'block' , 
+    display:'block' ,
     paddingLeft: '20px',
     fontWeight: 'bold',
 

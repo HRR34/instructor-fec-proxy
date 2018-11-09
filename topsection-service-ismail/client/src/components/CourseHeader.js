@@ -82,7 +82,7 @@ const styles = {
   },
   rightContainerStyle: {
     paddingTop: '4.1%',
-    flex: 2
+    flex: 2,
   },
   ratingContainerStyle: {
     display: 'flex',
